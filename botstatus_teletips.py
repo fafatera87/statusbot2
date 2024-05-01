@@ -31,6 +31,7 @@ BOT_LIST = BOT_LIST,
 CHANNEL_OR_GROUP_ID = CHANNEL_OR_GROUP_ID,
 MESSAGE_ID = MESSAGE_ID,
 BOT_ADMIN_IDS = BOT_ADMIN_IDS,
+)
 
 async def main_teletips():
     async with app:
