@@ -10,7 +10,7 @@ import asyncio
 import datetime
 import pytz
 import os
-from config import [
+from config import (
 API_ID,
 API_HASH,
 SESSION_STRING,
@@ -19,7 +19,7 @@ BOT_LIST,
 CHANNEL_OR_GROUP_ID,
 MESSAGE_ID,
 BOT_ADMIN_IDS,
-]
+)
 
 app = Client(
     name = "botstatus_teletips",
