@@ -9,3 +9,7 @@ BOT_LIST = [i.strip() for i in os.getenv("ArabUltraUbot ArabV2Ubot supernovaxubo
 CHANNEL_OR_GROUP_ID = int(os.getenv("-1001837260549"))
 MESSAGE_ID = int(os.getenv("43"))
 BOT_ADMIN_IDS = [int(i.strip()) for i in os.getenv.get("BOT_ADMIN_IDS").split(' ')]
+
+export BOT_USERNAMES="ArabUltraUbot ArabV2Ubot supernovaxubot DayforuMusic_bot ArabxRobot AfterGankUbot SASProtectV1_Bot SonixUbot OnedayXUbot RoyalUbot MydamnUbot fsubprem_1bot DomiUbot"
+export UPDATE_CHANNEL="-1001837260549"
+export STATUS_MESSAGE_IDS="43"
