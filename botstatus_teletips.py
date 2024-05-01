@@ -10,18 +10,27 @@ import asyncio
 import datetime
 import pytz
 import os
+from config import [
+API_ID,
+API_HASH,
+SESSION_STRING,
+TIME_ZONE,
+BOT_LIST,
+CHANNEL_OR_GROUP_ID,
+MESSAGE_ID,
+BOT_ADMIN_IDS,
+]
 
 app = Client(
     name = "botstatus_teletips",
-    api_id = int(os.environ["29737623"]),
-    api_hash = os.environ["71a4bb6501593f225cdab4d4b368a830"],
-    session_string = os.environ["BQAP-GEAJeLaW5zShFphAkcsPn1yau3TXAXGhGCqp2zzm_lu2Pi-GmfiGN7G-7YM3KSRLFoS-YHNEGX9F13-rJm9zJr9LUuoICsbzxe7bUvfsXxSnoUaF5bIxHP3SilzWBJ3-vLgW0AANsUNGSgJbR6vyG1iyT5_Racc3CosPz8SznpLTaKq6x6w4s08-xO03btFljAhnDxjPSiXfgaodwNLzOfu42I2AiiFdwU_GwnOCmaitlrM6fqoxYL--8-2ppmmOzWU2IF1ZAgAAjLOwepxwFVCZTkW3lkbR24D8Aj3rdT0w26ch7WZ86Dr7UDPFV3khlm6337h_m99uKbHUttX-2CHIwAAAAByE1_bAA"]
-)
-TIME_ZONE = os.environ["Asia/Jakarta"]
-BOT_LIST = [i.strip() for i in os.environ.get("ArabUltraUbot ArabV2Ubot supernovaxubot DayforuMusic_bot ArabxRobot AfterGankUbot SASProtectV1_Bot SonixUbot OnedayXUbot RoyalUbot MydamnUbot fsubprem_1bot DomiUbot").split(' ')]
-CHANNEL_OR_GROUP_ID = int(os.environ["-1001837260549"])
-MESSAGE_ID = int(os.environ["43"])
-BOT_ADMIN_IDS = [int(i.strip()) for i in os.environ.get("BOT_ADMIN_IDS").split(' ')]
+    api_id = API_ID,
+    api_hash = API_HASH,
+    session_string = STRING_SESSION,
+TIME_ZONE = TIME_ZONE,
+BOT_LIST = BOT_LIST,
+CHANNEL_OR_GROUP_ID = CHANNEL_OR_GROUP_ID,
+MESSAGE_ID = MESSAGE_ID,
+BOT_ADMIN_IDS = BOT_ADMIN_IDS,
 
 async def main_teletips():
     async with app:
